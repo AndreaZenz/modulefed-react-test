@@ -4,11 +4,7 @@ the guide i followed - : "https://medium.com/@samho1996/microfrontend-with-modul
 
 step to start the environment : 
 
-#1 - Within each application, install webpack 5 and related dependencies. 
-( yarn add -D webpack webpack-cli html-webpack-plugin webpack-dev-server babel-loader css-loader )
-
-#1.5 - Must also add Bootstrap and axios within each application
-( yarn add bootstrap && yarn add axios)
+#1 - yarn install all'interno dei due progetti
 
 #2 - Run your home-app and header-app.
 ( 

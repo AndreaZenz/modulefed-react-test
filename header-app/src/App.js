@@ -3,29 +3,11 @@ import axios from "axios";
 // Must be imported for webpack to work
 import "./App.css";
 
-function App(props, handleRefreshData) {
+function App(props) {
   // array destructuring   (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment), questo array contiene il valore ricavato dall'api
   // const [data, setData] = useState([]);
 
   const data = props.data;
-
-  
-
-  //The useEffect hook is called in a component after the first render and every time the component updates.
-  // useEffect(() => {
-    // axios (libreria npm) ci permette di effettuare la get a mocky, e nel then prendiamo la risposta e utilizzando il setData (dell'array deconstructure)
-  //   axios
-  //     .get("https://run.mocky.io/v3/98ae029f-b61a-4a3f-8323-8078d95cb12e")
-  //     .then((res) => setData(res.data))
-  //     .catch((err) => console.log(err));
-  // }, []);
-
-  // const refreshData = () => {
-  //   axios
-  //     .get("https://run.mocky.io/v3/61ce86a9-040b-4830-b3dc-5de6d7f78536")
-  //     .then((res) => setData(res.data), console.log(test))
-  //     .catch((err) => console.log(err));
-  // };
 
   return (
     <div className="container">

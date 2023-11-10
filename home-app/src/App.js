@@ -28,13 +28,11 @@ function App() {
   };
 
 
-
   return (
     <div className="App">
       <Suspense fallback={<div>Loading Header...</div>}>
         <Header
           data={data}
-          handleRefreshData={handleRefreshData}
         />
       </Suspense>
       <div className="container">
